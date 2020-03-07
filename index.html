@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gif Animal API</title>
-    <!-- Links -->
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Scripts -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <title>GifTastic - DisneyMovies</title>
+   <!--- <link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Monoton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/script.js"></script>
-
 </head>
 <body>
+    
+    <div class="container">
 
-    <div class="container row" id="animalbuttons">
-
-    </div>
-    <div >
-        <form class="col-md-offset-9 col-md-3 col-xs-offset-9 col-sm-3 col-xs-offset-5 col-xs-6" action="" id="animalform">
-            <label class="col-md-12 col-sm-12 col-xs-12" for="animal-input">Add an animal</label><br>
-            <input class="animal-input col-md-11 col-sm-12 col-xs-12" type="text" name="animalName" id ="animal-input"></br>
-            <input class="col-md-6  col-sm-6 col-xs-8 btn btn-success" id="addAnimal" type="submit" value="submit">
-        </form> 
-
-        <div class="col-md-9  col-sm-12 col-xs-12 " id="animals">
-
+       
+        <div class="jumbotron">
+            <h1>DISNEY MOVIES</h1>
         </div>
+
+        <div class="row">
+            <div class="col-sm-12 form-group text-center">
+                <form id="form">
+                    <div>
+                        <label for="user-input">Add your favorite Movie!</label>
+                        <input class="user-input" type="text" id="user-input">
+                        <input class="submit btn-primary rounded" type="submit" value="Add movie" id="add-movie">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 buttons" id="movie-Buttons"></div>
+        </div>
+
+        <div class="row">
+            <div class="gifs-body">
+                <div class="col-sm-12 gifs-holder"></div>
+            </div>
+        </div>
+        
+        
+    
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/gif.js"></script>
 
 </body>
-
 </html>
